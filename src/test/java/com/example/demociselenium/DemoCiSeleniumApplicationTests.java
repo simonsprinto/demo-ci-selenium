@@ -20,7 +20,7 @@ class DemoCiSeleniumApplicationTests {
 
 		driver.get("https://iths.se");
 
-		Assertions.assertEquals("IT-Högskolan – Här startar din IT-karriär!", driver.getTitle(), "The title is not correct");
+		Assertions.assertEquals("IT-Högskolan – Här startar din IT-karriär!!!", driver.getTitle(), "The title is not correct");
 	}
 
 }

@@ -31,9 +31,3 @@ jobs:
 
     - name: Build and Test with Maven
       run: mvn -B clean verify -DskipTests=false -Dwebdriver.chrome.driver=/usr/local/bin/chromedriver
-
-    - name: Archive Artifacts
-      uses: actions/upload-artifact@v2
-      with:
-        name: test-reports
-        path: target/surefire-reports/
